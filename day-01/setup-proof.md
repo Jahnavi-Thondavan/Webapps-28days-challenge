@@ -10,6 +10,6 @@ npm version: 11.6.2
 
 ## Screenshot Proof
 
-![Terminal Screenshot](image1.png)
+![Terminal Screenshot](screenshots/image1.png)
 
-![Terminal Screenshot](image2.png)
+![Terminal Screenshot](screenshots/image2.png)
