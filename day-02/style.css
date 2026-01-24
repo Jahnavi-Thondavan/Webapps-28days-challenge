@@ -1,0 +1,136 @@
+body {
+    background-color: #3F4F7A;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    /* BIGGER + SPACED DOTS */
+    background-image: radial-gradient(
+        circle,
+        rgba(242, 227, 179, 0.45) 2.5px,
+        transparent 3px
+    );
+    background-size: 80px 80px; /* controls gap between dots */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at left, rgba(248,131,121,0.12), transparent 40%),
+    radial-gradient(circle at right, rgba(239,161,166,0.12), transparent 40%);
+  z-index: -1;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(
+            to right,
+            rgba(248, 131, 121, 0.12),
+            transparent 25%,
+            transparent 75%,
+            rgba(239, 161, 166, 0.12)
+        );
+    z-index: -1;
+    pointer-events: none;
+}
+
+body {
+  background-image:
+    radial-gradient(#F2E3B3 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    color: #F9F7F2;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F88379;
+}
+
+/* TEXT */
+span {
+    color: #f05058;
+}
+
+h2, h3 {
+    color: #1E2A44;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    border-left: 5px solid #F25C63;
+    padding-left: 10px;
+}
+
+/* CARDS */
+.card {
+    background-color: #f1c2c8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 14px;
+    border: 4.5px solid rgba(238, 127, 134, 0.8);
+    box-shadow: 0 8px 18px rgba(30, 42, 68, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+ul li, ol li {
+  margin-bottom: 6px;
+}
+
+
+/* SOCIAL LINKS */
+.social-links {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F25C63;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+}
