@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WEBAPPS Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/photos/favicon.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="top-header">
+    <h1><span class="main">WEBAPPS Student Dashboard</span></h1>
+    <br>
+    <p><span class="sub">Welcome back 🌱 Stay consistent, stay focused.</span></p>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="dashboard">
+
+    <!-- NAVIGATION -->
+    <aside class="sidebar collapsed" id="sidebar">
+      <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+      <ul class="nav-list">
+  <li class="active">
+  <a href="#home">
+    <i class="fas fa-home"></i>
+    <span class="hehe">Home</span>
+  </a>
+</li>
+
+  <li>
+    <a href="#profile">
+      <i class="fas fa-user"></i>
+      <span class="hehe">Profile</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#goals">
+      <i class="fas fa-bullseye"></i>
+      <span class="hehe">Goals</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#tasks">
+      <i class="fas fa-list"></i>
+      <span class="hehe">Tasks</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#courses">
+      <i class="fas fa-book"></i>
+      <span class="hehe">Courses</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#timetable">
+      <i class="fas fa-calendar"></i>
+      <span class="hehe">Timetable</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#progress">
+      <i class="fas fa-chart-line"></i>
+      <span class="hehe">Progress</span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#stats">
+      <i class="fas fa-clock"></i>
+      <span class="hehe">Stats</span>
+    </a>
+  </li>
+</ul>
+
+</ul>
+    </aside>
+
+    <!-- PROFILE SECTION -->
+    <section class="profile-section">
+        <h2><span class="profile">Profile</span></h2>
+      <img src="/photos/pic2.png" alt="My Photo" />
+      <div class="divider">
+        <h3><span class="name">Jahnavi Thondavan</span></h3><br>
+      <p>Student | Tech Enthusiast</p>
+        <p><strong>Branch:</strong> Biotechnology</p>
+        <p><strong>ID:</strong> 2500010121</p>
+      </div>
+      
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="cards-section">
+
+      <div class="card">
+        <h3><span class="Head">Goals</span></h3>
+        <p>Focused on learning HTML, CSS, and JavaScript to build responsive and interactive web applications.</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <h3><span class="Head">Tasks / To-Do</span></h3>
+        <p>Today's Study Plan:<br><br>
+        1. Practice HTML layout (30 mins)<br>
+        2. Revise CSS Flexbox<br>
+        3. Watch 1 JS tutorial<br>
+        4. Build 1 small component<br>
+        5. Review today’s notes<br>
+        6. Update progress tracker
+        </p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <h3><span class="Head">Courses</span></h3>
+        <p>Overview of the web development courses and learning modules I am currently enrolled in.</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <h3><span class="Head">Timetable</span></h3>
+        <p>Displays my college schedule and personal study timetable, organizing both in one place for better time management.</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <h3><span class="Head">Progress Tracker</span></h3>
+        <p>Tracks my academic and learning progress over time, helping me stay consistent and improve across different subjects.</p>
+        <button>View Details</button>
+      </div>
+
+      <div class="card">
+        <h3><span class="Head">Stats</span></h3>
+        <p>Displays study statistics, including hours spent learning, to track consistency, productivity, and overall progress.</p>
+        <button>View Details</button>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- JS (only logic, no styling) -->
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+  </script>
+
+</body>
+</html>
