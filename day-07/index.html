@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 7 Web Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button class="toggle" onclick="toggleDarkMode()"><strong>🌙 Dark Mode</strong></button>
+
+  <h1>Web Apps – Day 7</h1>
+
+  <div class="card">
+    <h2>Vote Checker</h2>
+    <input type="number" id="Age" placeholder="Enter your age">
+    <button onclick="check()">Check</button>
+    <p id="Result"></p>
+  </div>
+
+  <div class="card">
+    <h2>Counter App</h2>
+    <p id="count">0</p>
+    <button onclick="decrease()">-</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="increase()">+</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
