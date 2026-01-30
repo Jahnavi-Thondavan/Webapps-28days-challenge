@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini project</title>
+    <style>
+        .list{
+            width: 200px;
+            height: 500px;
+            background-color: rgb(158, 187, 242);
+        }
+
+        .item{
+            width: auto;
+            height: 50px;
+            background-color: rgb(13, 108, 224);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+
+    </div>
+
+
+    <script>
+        let arr1=["Aaron","Ella","Kenji","Nazeera"];
+        let list=document.querySelector(".list");
+        
+        let html='';
+
+        for(let i=0;i<arr1.length;i++){
+            html+='<div class="item">'+arr1[i]+"</div>";
+        }
+
+        list.innerHTML=html;
+    </script>
+</body>
+</html>
+
+<!-- DYNAMIC RENDARING? -->

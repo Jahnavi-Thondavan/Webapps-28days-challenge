@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <input type="number" name="Age" id="age">
+
+    <button onclick="check()"> click</button>
+
+    <script>
+        function check(){
+            let input=document.getElementById("age");
+            let val=input.value;
+            if(val<18){
+                alert("Do not vote");
+            }else{
+                aler("Vote");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- queryselector for class -->

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+
+        body{
+            background-color: rgb(241, 196, 185);
+            margin: 0;
+            padding: 0;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .con{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            border-color: brown;
+            border-width: 3px;
+            border-style: double;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <p class="al">0</p>
+        <div>
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </div>
+
+    <script>
+            let val=0;
+            let al=document.querySelector(".al");
+    function add(){
+        val=val+1;
+        al.innerHTML=val;
+    }
+        function sub(){
+            val=val-1;
+            al.innerHTML=val;
+        }
+        function reset(){
+            val=0;
+            al.innerHTML=val;
+        }
+    </script>
+
+</body>
+</html>
