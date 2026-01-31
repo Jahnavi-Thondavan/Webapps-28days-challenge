@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7e6ea;
+  text-align: center;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.price {
+  color: #b94f6d;
+  font-weight: bold;
+}
