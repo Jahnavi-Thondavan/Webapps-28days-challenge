@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login pagegut </title>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgba(13, 23, 85, 0.837);
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container{
+            width: 400px;
+            height: auto;
+            background-color: rgb(233, 189, 87);
+            padding: 10px;
+            border-radius: 10px;
+            border: solid 3px rgba(174, 31, 31, 0.86);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container h1{
+            color: rgb(39, 35, 35);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 35px;
+        }
+
+        .userinput{
+            width:100%;
+            margin-bottom: 20px;
+        }
+        .userdata{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+            width: 100%;
+
+        }
+
+        .userdata label{
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        .userdata input{
+            border: none;
+            height: 30px;
+            padding: 10px;
+        }
+
+        button{
+            width: 100%;
+            border: none;
+            height: 35px;
+            background-color: cornflowerblue;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <div class="userinput">
+
+            <div class="userdata">
+                <label for="Username">Username</label>
+                <input id="Username-input" type="text" placeholder="Enter Username" name="Username">
+            </div>
+
+            <div class="userdata">
+                <label for="Email">Email</label>
+                <input id="Email-input" type="text" placeholder="Enter Email" name="Email">
+            </div>
+
+            <div class="userdata">
+                <label for="Password">Password</label>
+                <input id="Password-input" type="password" placeholder="Enter Password" name="Password">
+            </div>
+
+            <button>Login</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function createaccount(){
+            const user={
+                Username:document.getElementById("Username-input").value,
+                Email:document.getElementById("Email-input").value,
+                Password:document.getElementById("Password-input").value
+            }
+
+            fetch("https://webapps-api-class.onrender.com/api", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(user)
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+
+    if (data.success == true) {
+      alert(data.message);
+    } else {
+      alert(data.message);
+    }
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
+
+    </script>
+
+</body>
+</html>
