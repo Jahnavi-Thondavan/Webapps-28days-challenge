@@ -1,0 +1,79 @@
+    body {
+    margin: 0;
+    background: linear-gradient(300deg, #ec9aa0, #f3e6c6, #f07d7d);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;  
+}
+
+    .h1{
+        color: black;
+        margin: 10px;
+        padding: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        align-items: center;
+        background-color: #e76d6dcd;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .h2{
+        font-size: 1.5rem;
+        color: black;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .Pokecards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4eded;
+        padding: 15px;
+        border-radius: 7px;
+        width: 165px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    .cards img{
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+    }
+
+    .cards h3{
+        color: rgb(59, 68, 69);
+        margin: 10px;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+    }
+
+    .cards button{
+        background-color: #f14f67a7;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    .btn{
+        margin: 20px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #f7556ab1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
