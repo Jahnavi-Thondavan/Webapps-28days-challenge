@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(160deg,#fff4f8 0%,#f6c6d8 50%,#e2a4bf 100%);
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    width: 350px;
+    background: rgb(230, 230, 230);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 10px 15px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.h2 {
+    margin: 0 0 20px;
+    color: #b75b8e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.advice {
+    margin: 0;
+    color: #c785a6;
+    font-size: 16px;
+}
+
+.getAdvice {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d98ca7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    background-color:#c67893 ;
+}
