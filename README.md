@@ -21,4 +21,3 @@ I joined the WEBAPPS 28-Day Challenge to build a strong foundation in web develo
 - Working with APIs  
 - Building mini projects to apply what I learn  
 - Enhancing logical thinking and problem-solving skills  
-git status
