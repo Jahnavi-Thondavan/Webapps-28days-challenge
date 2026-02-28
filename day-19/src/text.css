@@ -1,0 +1,25 @@
+.txtCon{
+    width: 95px;
+    height: 95px;
+
+    background: rgba(237, 104, 104, 0.44);
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transition: 0.2s ease;
+}
+
+.txtCon:hover{
+    transform: scale(1.08);
+}
+
+.txtCon h1{
+    font-size: 42px;
+    color: white;
+    margin: 0;
+}
