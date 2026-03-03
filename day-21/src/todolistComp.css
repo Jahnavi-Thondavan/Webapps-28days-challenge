@@ -1,0 +1,155 @@
+.todoListContainer {
+  width: 340px;
+  height: 500px;
+  background-color: #dfe7c4;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* INPUT SECTION */
+
+.inputContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.inputContainer input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: #5A3E2B;
+  font-family: 'Quicksand', sans-serif;
+  transition: all 0.2s ease;
+}
+
+.inputContainer input:focus {
+  box-shadow: 0px 0px 0px 2px #3A5A40;
+}
+
+/* ADD BUTTON */
+
+.inputContainer button {
+  background-color: #3A5A40;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.inputContainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(58,90,64,0.3);
+}
+
+.inputContainer button:active {
+  transform: scale(0.96);
+}
+
+/* TASK LIST */
+
+.listContainer {
+  flex: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.listContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* TASK ITEM */
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bdcda2;
+  padding: 8px 12px;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  transition: all 0.25s ease;
+}
+
+.listItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE */
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.listItem p {
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
+  color: #5A3E2B;
+  transition: all 0.3s ease;
+}
+
+/* CHECKBOX DARK GREEN */
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #3A5A40;
+  cursor: pointer;
+}
+
+/* COMPLETED STYLE */
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* DELETE BUTTON */
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  color: #3A5A40;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.deleteBtn:hover {
+  color: #1B4332;
+  transform: scale(1.1);
+}
+
+/* CLEAR BUTTON */
+
+.clearTaskBtn {
+  background-color: #3A5A40;
+  border: none;
+  padding: 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.clearTaskBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 15px rgba(58,90,64,0.3);
+}
+
+.clearTaskBtn:active {
+  transform: scale(0.97);
+}
